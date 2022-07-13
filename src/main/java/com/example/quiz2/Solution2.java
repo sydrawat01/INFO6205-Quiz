@@ -1,12 +1,10 @@
 package com.example.quiz2;
 
-import java.util.*;
-
 public class Solution2 {
     // the root of current node
-    private static int[] root;
+    private final int[] root;
     // the tree size of current node
-    private int[] size;
+    private final int[] size;
 
     public Solution2 (int N) {
         root = new int[N];
@@ -45,22 +43,5 @@ public class Solution2 {
     /* check if p and q are connected.*/
     boolean connected (int p, int q) {
         return find(p) == find(q);
-    }
-
-    public static void main(String[] args) {
-        Solution2 uf = new Solution2(10);
-        System.out.println("Union (2,9)");
-        uf.union(2, 9);
-        System.out.println("Union (3,4)");
-        uf.union(3, 4);
-        System.out.println("Union (4,9)");
-        uf.union(4, 9);
-        System.out.println("Union (5,6)");
-        uf.union(5, 6);
-        System.out.println("Union (3,5)");
-        uf.union(3, 5);
-        for( int i : root) {
-            System.out.print(i + " ");
-        }
     }
 }
