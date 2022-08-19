@@ -88,7 +88,6 @@ public class Solution11Test {
         digraph.addEdge(3, 1);
 
         Topological topological = new Topological(digraph);
-
     }
 
 

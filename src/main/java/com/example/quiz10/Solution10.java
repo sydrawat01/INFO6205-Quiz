@@ -25,7 +25,7 @@ public class Solution10 {
         int components = 0; //total number of connected components
         int[] visited = new int[n]; //array to mark the visited nodes in the graph
 
-        //TO-DO:
+        //TODO:
         List<Integer>[] adjList = new ArrayList[n];
         for (int i = 0; i < n; i++) {
             adjList[i] = new ArrayList<Integer>();
